@@ -7,6 +7,8 @@ import {
   HomeIcon,
   SettingsIcon,
 } from "../shared/SVGs";
+import plus_icon from "../../assets/plus_icon.png";
+import styles from "./NavMenu.module.css";
 
 const NavMenu: React.FC = () => {
   return (
@@ -14,12 +16,12 @@ const NavMenu: React.FC = () => {
       position="fixed"
       sx={{ top: "auto", bottom: 0, backgroundColor: "#fff", padding: "20px" }}
     >
-      <Toolbar sx={{ justifyContent: "space-between" }}>
+      <Toolbar sx={{ justifyContent: "space-between", padding: 0 }}>
         <IconButton
           component={Link}
           to="/"
           color="inherit"
-          className="iconButton"
+          className={styles.iconButton}
         >
           <HomeIcon />
         </IconButton>
@@ -27,20 +29,20 @@ const NavMenu: React.FC = () => {
           component={Link}
           to="/expenses"
           color="inherit"
-          className="iconButton"
+          className={styles.iconButton}
         >
           <ExpensesIcon />
         </IconButton>
 
-        <Fab color="secondary" aria-label="add" className="fabButton">
-          +
+        <Fab color="primary" aria-label="add" className="fabButton">
+          <img src={plus_icon} alt="plus_icon" />
         </Fab>
 
         <IconButton
           component={Link}
           to="/"
           color="inherit"
-          className="iconButton"
+          className={styles.iconButton}
         >
           <CalendarIcon />
         </IconButton>
@@ -48,7 +50,7 @@ const NavMenu: React.FC = () => {
           component={Link}
           to="/"
           color="inherit"
-          className="iconButton"
+          className={styles.iconButton}
         >
           <SettingsIcon />
         </IconButton>

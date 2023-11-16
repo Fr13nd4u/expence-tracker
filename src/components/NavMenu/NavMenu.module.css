@@ -1,0 +1,8 @@
+.iconButton:hover {
+  background-color: transparent !important;
+}
+
+.iconButton:hover svg path {
+  fill: #FF643B;
+  transition: .4s ease-in-out;
+}

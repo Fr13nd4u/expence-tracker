@@ -10,6 +10,7 @@ const BalanceCardList: FC = () => {
       alignItems="center"
       spacing={0}
       gap="20px"
+      marginBottom="32px"
     >
       <BalanceCard
         variant="primary"

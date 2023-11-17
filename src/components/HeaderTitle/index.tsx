@@ -15,18 +15,16 @@ const HeaderTitle: FC<HeaderTitleProp> = ({ title }) => {
       alignItems="center"
       justifyContent="space-between"
       width="100%"
+      marginBottom="36px"
     >
       <Avatar
         alt="Avatar"
         src={avatar_src}
         variant="rounded"
-        style={{ background: "#8234F8" }}
+        sx={{ background: "#8234F8", width: "43px", height: "43px" }}
       />
 
-      <Typography
-        variant="h5"
-        sx={{ textTransform: "uppercase", fontWeight: 600 }}
-      >
+      <Typography variant="h5" sx={{ fontWeight: 500 }}>
         {title}
       </Typography>
 

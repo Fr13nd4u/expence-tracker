@@ -12,7 +12,12 @@ const Calendar: FC = () => {
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <Grid container direction="column" alignItems="center">
+      <Grid
+        container
+        direction="column"
+        alignItems="center"
+        marginBottom="32px"
+      >
         <DateCalendar
           showDaysOutsideCurrentMonth
           value={value}

@@ -1,0 +1,13 @@
+.primaryIcon svg path {
+  fill: rgba(122, 77, 190, 0.5);
+}
+
+.secondaryIcon svg path {
+  fill: rgba( 255, 100, 59, 0.5);
+}
+
+.primaryIcon svg,
+.secondaryIcon svg {
+  width: 33px;
+  height: 26px;
+}

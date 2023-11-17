@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { formatNumberToCurrency } from "../helpers";
 import {
   Stack,
   Card,
@@ -18,12 +19,6 @@ interface CreditCardProps {
 }
 
 const CreditCard: FC<CreditCardProps> = ({ balance, credit_number }) => {
-  const formatNumberToCurrency = (number: number): string => {
-    const [whole, decimal] = number.toFixed(2).split(".");
-    const formattedNumber = whole.replace(/\B(?=(\d{2})+(?!\d))/g, ",");
-    return `${formattedNumber}.${decimal}`;
-  };
-
   return (
     <Card
       variant="outlined"

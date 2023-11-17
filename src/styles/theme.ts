@@ -8,5 +8,8 @@ export const theme = createTheme({
     secondary: {
       main: '#8234F8'
     }
-  }
+  },
+  typography: {
+    fontFamily: 'Roboto, sans-serif',
+  },
 });

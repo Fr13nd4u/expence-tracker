@@ -1,4 +1,3 @@
-// Import necessary dependencies
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavMenu from "./components/NavMenu/NavMenu";

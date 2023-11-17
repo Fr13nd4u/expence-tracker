@@ -1,0 +1,57 @@
+.MuiGrid-root  {
+  background: #FAFAFA;
+  border-radius: 21px;
+  padding: 0 14px 20px;
+}
+
+.MuiDateCalendar-root {
+  height: auto !important;
+}
+
+.MuiPickersCalendarHeader-root {
+  position: relative;
+}
+
+.MuiPickersCalendarHeader-labelContainer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.MuiPickersCalendarHeader-root button[aria-label="Next month"] {
+  position: absolute;
+  right: 20px;
+}
+
+.MuiPickersCalendarHeader-label, .MuiPickersCalendarHeader-root button {
+  color: #000;
+}
+
+.MuiDayCalendar-slideTransition {
+  min-height: 40px !important;
+  height: 40px;
+}
+
+.MuiDayCalendar-monthContainer {
+  height: 40px;
+}
+
+.MuiDayCalendar-monthContainer button {
+  color: #615C5C;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.MuiDayCalendar-monthContainer button:hover {
+  background-color: #FF643B !important;
+  font-weight: 800;
+  color: #fff !important;
+  font-size: 18px;
+  border-radius: 8px !important;
+}
+
+.Mui-selected {
+  color: #fff !important;
+  background-color: #FF643B !important;
+  border-radius: 8px !important;
+}

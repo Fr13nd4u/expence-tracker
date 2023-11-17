@@ -10,6 +10,8 @@ import {
 import credit_icon from "../../assets/credit_icon.png";
 import { SettingsDotsIcon } from "../shared/SVGs";
 
+import styles from "./CreditCard.module.css";
+
 interface CreditCardProps {
   credit_number: string;
   balance: number;
@@ -25,14 +27,18 @@ const CreditCard: FC<CreditCardProps> = ({ balance, credit_number }) => {
   return (
     <Card
       variant="outlined"
+      className={styles.creditCard}
       sx={{
+        position: "relative",
         background: "#2F3046",
+        overflow: "visible",
         borderRadius: "24px",
         padding: "23px 30px 0",
         color: "#FAFAFA",
-        marginBottom: "32px",
+        margin: "70px 0 32px",
       }}
     >
+      <div></div>
       <CardContent
         sx={{
           position: "relative",

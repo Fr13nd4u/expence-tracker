@@ -22,11 +22,6 @@ const Calendar: FC = () => {
           showDaysOutsideCurrentMonth
           value={value}
           onChange={(newValue) => setValue(newValue)}
-          renderDay={(day, _, DayProps) => (
-            <Grid item key={day.toISOString()}>
-              {DayProps?.children}
-            </Grid>
-          )}
         />
       </Grid>
     </LocalizationProvider>

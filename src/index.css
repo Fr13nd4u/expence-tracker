@@ -31,4 +31,18 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+.Mui-focused  {
+  background-color: #FF643B !important;
+}
 
+.MuiInputBase-formControl svg {
+  fill: #fff;
+}
+
+.MuiSelect-select {
+  padding: 10px 32px 10px 10px !important;
+}
+
+fieldset {
+  display: none;
+}
